@@ -57,3 +57,8 @@ npm test
 
 Desplegado en: https://sistemacontrolestudiantes-backend.onrender.com/
 
+## Monitorización
+- Integración básica con backend para métricas
+- Logs y alertas visuales en consola
+  
+Monitorización: https://sistemacontrolestudiantes-backend.onrender.com/metrics
