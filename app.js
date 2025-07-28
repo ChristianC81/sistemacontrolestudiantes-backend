@@ -6,7 +6,13 @@ const usuarioRoutes = require('./src/routes/usuarioRoutes');
 
 const app = express();
 
-app.use(cors());
+// Configurar CORS para permitir el dominio de Netlify
+app.use(cors({
+  origin: 'https://monumental-seahorse-0e87bf.netlify.app',
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+}));
+
 app.use(express.json());
 
 // Rutas
